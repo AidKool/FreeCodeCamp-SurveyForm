@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,96 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Survey Form</title>
 </head>
+
 <body>
-  
+  <div id="container">
+    <header>
+      <h1>Our Little Bookshop Survey Form</h1>
+      <p id="description">Your feedback is always greatly appreciated!</p>
+    </header>
+    <div id="form-container">
+      <form id="survey-form">
+        <div class="personal-info">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-text" placeholder="Enter your name" required>
+
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-text" placeholder="Enter your email" required>
+
+          <label id="number-label" for="number">Age (optional)</label>
+          <input type="number" name="age" id="age" min="18" max="99" class="form-text" placeholder="Age">
+        </div>
+        <div class="form-option">
+          <p>What is your current status?</p>
+          <select id="status">
+            <option disabled selected value>Select your status</option>
+            <option value="student">Student</option>
+            <option value="full-time">Working full-time</option>
+            <option value="part-time">Working part-time</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="retired">Retired</option>
+          </select>
+        </div>
+        <div class="form-option">
+          <p>What is your favorite literary genre?</p>
+          <select id="favorite-genre">
+            <option disabled selected value>Select your favorite genre</option>
+            <option value="biography">Biography</option>
+            <option value="crime">Crime</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="historical-novel">Historical Novel</option>
+            <option value="romance">Romance</option>
+            <option value="sci-fi">Sci-fi</option>
+            <option value="thriller">Thriller</option>
+          </select>
+        </div>
+        <div class="form-radio">
+          <p>Would you recommend our store to your friends?</p>
+          <label>
+            <input type="radio" value="definitely" name="recommendation" checked>Definitely!
+          </label>
+          <label>
+            <input type="radio" value="maybe" name="recommendation">Maybe
+          </label>
+          <label>
+            <input type="radio" value="notSure" name="recommendation">Not sure
+          </label>
+        </div>
+        <div class="form-checkbox">
+          <p>What do you think we should do to improve?</p>
+          <label for="range">
+            <input id="range" type="checkbox" name="range"> Have a wider range of books
+          </label>
+          <label for="events">
+            <input id="events" type="checkbox" name="events"> Organize monthly events
+          </label>
+          <label for="discounts">
+            <input id="discounts" type="checkbox" name="discounts"> Offer regular discounts
+          </label>
+          <label for="website">
+            <input id="website" type="checkbox" name="website"> Update our website
+          </label>
+          <label for="online-shopping">
+            <input id="online-shopping" type="checkbox" name="online-shopping"> Offer online shopping
+          </label>
+          <label for="ebooks">
+            <input id="ebooks" type="checkbox" name="ebooks"> Sell ebooks
+          </label>
+        </div>
+        <div class="suggestions">
+          <p>Any other comments or suggestions?</p>
+          <textarea id="suggestions" placeholder="Enter your comments or suggestions here..."></textarea>
+        </div>
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <p>Created by JL</p>
+      <a class="github-button" href="https://github.com/aidkool" aria-label="Follow @aidkool on GitHub">Follow
+        @aidkool</a>
+    </footer>
+  </div>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
+
 </html>
