@@ -65,7 +65,7 @@ input[type=text], input[type=email], input[type=number], select, #suggestions {
   height: 7rem;
 }
 
-.submit {
+#submit {
   height: 2.5rem;
   width: 100%;
   text-align: center;
