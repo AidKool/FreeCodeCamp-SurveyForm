@@ -1,5 +1,5 @@
 body {
-  background: url(/images/bookshelf.jpg) no-repeat;
+  background: url(../images/bookshelf.jpg) no-repeat;
   background-size: cover;
   box-sizing: border-box;
 }
